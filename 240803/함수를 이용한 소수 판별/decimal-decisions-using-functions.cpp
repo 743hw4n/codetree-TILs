@@ -2,6 +2,8 @@
 using namespace std;
 
 bool isPrime(int a) {
+
+	if (a == 1) return false;
 	if (a == 2) return true;
 
 	for (int i = 2; i < a; i++) {
