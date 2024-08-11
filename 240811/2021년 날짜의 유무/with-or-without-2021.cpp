@@ -8,7 +8,7 @@ int day[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 bool isDay(int m, int d) {
 	if (m < 1 || m > 12) return false;
 
-	if (day[m - 1] > d)
+	if (day[m - 1] >= d)
 		return true;
 	else
 		return false;
