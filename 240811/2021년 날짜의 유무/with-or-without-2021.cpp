@@ -21,4 +21,5 @@ int main() {
 	if (isDay(m, d)) cout << "Yes";
 	else cout << "No";
 
-	return
+	return 0;
+}
