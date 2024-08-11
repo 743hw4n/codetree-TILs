@@ -34,7 +34,10 @@ int main() {
 
 	for (int i = 0; i < a; i++) {
 		if (arr1[i] == arr2[0])
+		{
 			index = i;
+			break;
+		}
 	}
 
 	if (isPart(index, arr1, arr2, b))
