@@ -11,12 +11,10 @@ int isYoon(int year) {
 			if (year % 400) {
 				return true;
 			}
-			else 
-				return false;
+			return false;
 		}
 		return true;
 	}
-
 	return false;
 }
 
@@ -45,9 +43,11 @@ string getSeason(int month) {
 int main() {
 	cin >> year >> month >> day;
 
-	if (day > lastDay(year, month)) cout << NOEXIST;
-	else {
+	if (month < 1 || month > 12 || day < 1 || day > lastDay(year, month)) 
+		cout << NOEXIST;	
+	else 
 		cout << getSeason(month);
-	}
+	
+
 	return 0;
 }
