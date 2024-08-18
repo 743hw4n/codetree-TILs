@@ -36,7 +36,7 @@ int main() {
 		cin >> arr[i];
 	}
 	
-	v(n, arr);
+	int result = v(n, arr);
 	cout << result;
 	return 0;
 }
