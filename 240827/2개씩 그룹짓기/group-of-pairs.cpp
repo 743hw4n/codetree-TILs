@@ -16,7 +16,7 @@ int main() {
 
 	sort(arr, arr + 2 * n);
 
-	int result;
+	int result = 0;
 
 	for (int i = 0; i < n; i++) {
 		result = max(result, arr[i] + arr[2 * n - i - 1]);
