@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <iomanip>
 using namespace std;
 
 class Student {
@@ -16,7 +17,7 @@ public:
 	}
 
 	void print() {
-		cout  << name << " " << height << " " << weight << '\n';
+		cout  << name << " " << height << " " << fixed << setprecision(1) << weight << '\n';
 	}
 };
 
