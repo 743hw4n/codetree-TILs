@@ -47,6 +47,8 @@ int main() {
 		students[i].print();
 	}
 
+	cout << '\n';
+
 	cout << "height" << '\n';
 	sort(students, students + 5, cmp2);
 	for (int i = 0; i < 5; i++) {
