@@ -6,7 +6,7 @@ int main() {
 	cin >> a >> b >> c;
 	int day = 11, hour = 11, min = 11;
 	
-	if (a < start_day || (a == start_day && b < start_hour) || (a == start_day && b == start_hour && c < start_min)) {
+	if (a < day || (a == day && b < hour) || (a == day && b == hour && c < min)) {
 		cout << -1;
 		return 0;
 	}
