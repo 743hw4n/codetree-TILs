@@ -18,9 +18,9 @@ int main() {
 	}
 	d2Sum += d2;
 
-	if (m1 == m2 && d1 == d2) cout << 1;
-	else
-		cout << d2Sum - d1Sum;
+	
+	
+	cout << d2Sum - d1Sum+1;
 
 	return 0;
 }
