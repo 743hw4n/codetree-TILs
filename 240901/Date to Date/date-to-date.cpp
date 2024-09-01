@@ -7,13 +7,13 @@ int main() {
 	cin >> m1 >> d1 >> m2 >> d2;
 
 	int d1Sum = 0;
-	for (int i = 0; i < m1; i++) {
+	for (int i = 0; i < m1-1; i++) {
 		d1Sum += numberOfDays[i];
 	}
 	d1Sum += d1;
 
 	int d2Sum = 0;
-	for (int i = 0; i < m2; i++) {
+	for (int i = 0; i < m2-1; i++) {
 		d2Sum += numberOfDays[i];
 	}
 	d2Sum += d2;
