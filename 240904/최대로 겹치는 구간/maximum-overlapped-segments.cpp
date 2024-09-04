@@ -2,7 +2,7 @@
 using namespace std;
 
 //전역 변수로 선언하여 0으로 초기화
-int checked[101];
+int checked[201];
 
 int main() {
 
@@ -15,13 +15,13 @@ int main() {
 		cin >> x1 >> x2;
 
 		for (int i = x1; i < x2; i++) {
-			checked[i]++;
+			checked[i+100]++;
 		}
 	}
 
 	int max = 0;
 	
-	for (int i = 0; i < 101; i++) {
+	for (int i = 0; i < 200; i++) {
 		if (checked[i] > max) max = checked[i];
 	}
 
