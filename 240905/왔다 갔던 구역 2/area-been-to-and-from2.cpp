@@ -16,12 +16,14 @@ int main() {
 		cin >> dis >> dir;
 		if (dir == 'R') {
 			while (dis--) {
-				checked[location++]++;
+				checked[location]++;
+				location++;
 			}
 		}
 		else {
 			while (dis--) {
-				checked[location--]++;
+				location--;
+				checked[location]++;
 			}
 		}
 	}
