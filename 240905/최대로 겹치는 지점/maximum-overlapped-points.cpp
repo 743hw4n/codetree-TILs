@@ -12,7 +12,7 @@ int main() {
 		int x1, x2;
 		cin >> x1 >> x2;
 
-		for (int i = x1; i < x2; i++) {
+		for (int i = x1; i <= x2; i++) {
 			checked[i]++;
 		}
 	}
