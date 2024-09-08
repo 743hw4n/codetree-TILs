@@ -18,7 +18,7 @@ int main() {
 	{
 		for (int j = y1; j < y2; j++)
 		{
-			rect[i][j] = A;
+			rect[i+OFFSET][j+OFFSET] = A;
 		}
 	}
 
@@ -28,7 +28,7 @@ int main() {
 	{
 		for (int j = y1; j < y2; j++)
 		{
-			rect[i][j] = B;
+			rect[i + OFFSET][j + OFFSET] = B;
 		}
 	}
 
@@ -38,7 +38,7 @@ int main() {
 	{
 		for (int j = y1; j < y2; j++)
 		{
-			rect[i][j] = M;
+			rect[i + OFFSET][j + OFFSET] = M;
 		}
 	}
 
