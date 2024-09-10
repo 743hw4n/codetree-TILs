@@ -15,8 +15,9 @@ int main() {
 		if (i == 0 || arr[i - 1] == arr[i]) {
 			cnt++;
 		}
-		if (cnt > max) {
-			max = cnt;
+		else if (arr[i-1] != arr[i]) {
+			if (cnt > max)
+				max = cnt;
 		}
 	}
 
