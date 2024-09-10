@@ -7,20 +7,18 @@ int main() {
 
 	int* arr = new int[n];
 
-	int cnt = 0;
-	int max = 0;
+	int ans = 0, cnt = 0;
 	for (int i = 0; i < n; i++)
 	{
-		cin >> arr[i];
-		if (i == 0 || arr[i - 1] == arr[i]) {
+		if (i >= 1 && arr[i] == arr[i - 1])
 			cnt++;
-		}
-		else if (arr[i-1] != arr[i]) {
-			if (cnt > max)
-				max = cnt;
-		}
+		else
+			cnt = 1;
+
+		ans = max(ans, cnt);
 	}
 
-	cout << max;
+	cout << ans;
+	
 	return 0;
 }
