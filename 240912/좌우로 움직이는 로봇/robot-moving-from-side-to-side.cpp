@@ -64,7 +64,6 @@ int main() {
 	for (int i = 1; i < max(time_a, time_b); i++) {
 		if (pos_a[i] == pos_b[i]) {
 			if (pos_a[i - 1] != pos_b[i - 1]) {
-				cout << i << endl;
 				cnt++;
 			}
 		}
