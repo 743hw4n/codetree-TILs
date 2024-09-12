@@ -46,18 +46,30 @@ int main() {
 		}
 	}
 
+	if (time_a > time_b) {
+		for (int j = time_b; j < time_a; j++)
+		{
+			pos_b[j] = pos_b[time_b-1];
+		}
+	}
+	else if (time_a < time_b) {
+		for (int j = time_a; j < time_b; j++)
+		{
+			pos_a[j] = pos_a[time_a-1];
+		}
+	}
+
 	int cnt = 0;
 
-	for (int i = 1; i <= max(time_a, time_b); i++)
-	{
+	for (int i = 1; i < max(time_a, time_b); i++) {
 		if (pos_a[i] == pos_b[i]) {
-			if (pos_a[i - 1] != pos_b[i - 1])
-			{
-				//cout << i << endl;
+			if (pos_a[i - 1] != pos_b[i - 1]) {
+				cout << i << endl;
 				cnt++;
 			}
 		}
 	}
+
 
 	cout << cnt;
 	return 0;
