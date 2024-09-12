@@ -28,26 +28,29 @@ int main() {
 		cin >> v >> t;
 
 		while (t--) {
-			pos_a[time_b] = pos_a[time_b - 1] + v;
+			pos_b[time_b] = pos_b[time_b - 1] + v;
 			time_b++;
 		}
 	}
 
 	int leader = 0, ans = 0;
-	for (int i = 1; i < time_a; i++)
-	{
+	for (int i = 1; i < time_a; i++) {
 		if (pos_a[i] > pos_b[i]) {
-			if (leader == 2) ans++;
+		
+			if (leader == 2)
+				ans++;
 
 			leader = 1;
 		}
-
 		else if (pos_a[i] < pos_b[i]) {
-			if (leader == 1) ans++;
+			
+			if (leader == 1)
+				ans++;
 
 			leader = 2;
 		}
 	}
+
 	cout << ans;
 
 	return 0;
