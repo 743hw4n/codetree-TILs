@@ -31,12 +31,11 @@ int main() {
   int dir_num = dir(d);
 
   for (int i = 0; i < t; i++) {
-    x = x + dx[dir_num], y = y + dy[dir_num];
-    if (!InRange(x, y)) {
+    int nx = x + dx[dir_num], ny = y + dy[dir_num];
+    if (InRange(nx, ny))
+      x = nx, y = ny;
+    else {
       dir_num = 3 - dir_num;
-      x += dx[dir_num];
-      y += dy[dir_num];
-      // i++;
     }
   }
 
