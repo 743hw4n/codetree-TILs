@@ -26,6 +26,7 @@ int main() {
 
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
+      cntOne = 0;
       for (int dir_num = 0; dir_num < 4; dir_num++) {
         int nx = x + dx[dir_num], ny = y + dy[dir_num];
         if (InRange(nx, ny) && arr[nx][ny] == 1)
