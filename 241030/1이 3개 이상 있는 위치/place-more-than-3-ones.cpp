@@ -31,9 +31,9 @@ int main() {
         if (InRange(nx, ny) && arr[nx][ny] == 1)
           cntOne++;
       }
+      if (cntOne >= 3)
+        cnt++;
     }
-    if (cntOne >= 3)
-      cnt++;
   }
 
   cout << cnt;
