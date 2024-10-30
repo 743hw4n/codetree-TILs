@@ -8,7 +8,7 @@ int arr[101][101];
 int n;
 
 bool InRange(int x, int y) {
-  return (0 <= x && x < 5 && 0 < 5 && 0 <= y && y < 5);
+  return (0 <= x && x < n && 0 < n && 0 <= y && y < n);
 }
 
 int main() {
