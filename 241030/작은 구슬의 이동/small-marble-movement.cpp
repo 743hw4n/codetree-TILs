@@ -9,13 +9,13 @@ int dy[4] = {1, 0, 0, -1};
 
 int dir(char d) {
   if (d == 'U')
-    return 0;
-  else if (d == 'D')
-    return 3;
-  else if (d == 'R')
-    return 1;
-  else if (d == 'L')
     return 2;
+  else if (d == 'D')
+    return 1;
+  else if (d == 'R')
+    return 0;
+  else if (d == 'L')
+    return 3;
 }
 
 bool InRange(int x, int y) {
@@ -26,7 +26,7 @@ int main() {
   cin >> n >> t;
   cin >> r >> c >> d;
 
-  int x = c - 1, y = r - 1;
+  int x = r - 1, y = c - 1;
 
   int dir_num = dir(d);
 
@@ -39,7 +39,7 @@ int main() {
     }
   }
 
-  cout << y + 1 << " " << x + 1;
+  cout << x + 1 << " " << y + 1;
 
   return 0;
 }
