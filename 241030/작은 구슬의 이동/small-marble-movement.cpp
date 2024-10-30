@@ -19,14 +19,14 @@ int dir(char d) {
 }
 
 bool InRange(int x, int y) {
-  return (0 < x && x <= n && 0 < y && y <= n);
+  return (0 <= x && x < n && 0 <= y && y < n);
 }
 
 int main() {
   cin >> n >> t;
   cin >> r >> c >> d;
 
-  int x = c, y = r;
+  int x = c - 1, y = r - 1;
 
   int dir_num = dir(d);
 
@@ -39,7 +39,7 @@ int main() {
     }
   }
 
-  cout << y << " " << x;
+  cout << y + 1 << " " << x + 1;
 
   return 0;
 }
