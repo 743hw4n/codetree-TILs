@@ -32,7 +32,7 @@ int main() {
       y += dy[dir_num];
       total_time++;
 
-      if (x == 0 && y == 0) {
+      if (x == 0 && y == 0 && result == -1) {
         result = total_time;
       }
     }
