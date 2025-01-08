@@ -10,7 +10,7 @@ int start_num;
 int x, y, move_dir;
 
 int dx[4] = {1, 0, -1, 0};
-int dy[4] = {0, 1, 0, -1};
+int dy[4] = {0, -1, 0, 1};
 
 bool is_in_range(int x, int y) { return x >= 0 && x < N && y >= 0 && y < N; }
 
@@ -68,5 +68,5 @@ int main() {
   int move_num = Simulate();
 
   cout << move_num;
-   return 0;
+  return 0;
 }
