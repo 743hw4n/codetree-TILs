@@ -25,10 +25,10 @@ void Initialize(int num) {
     move_dir = 1;
   } else if (num <= 3 * N) {
     x = N - 1;
-    y = 3 * N - num - 1;
+    y = N - (num - 2 * N);
     move_dir = 2;
   } else {
-    x = 4 * N - num - 1;
+    x = N - (num - 3 * N);
     y = 0;
     move_dir = 3;
   }
