@@ -8,7 +8,7 @@ string str;
 int board[100][100];
 
 int dx[4] = {0, 1, 0, -1};
-int dy[4] = {1, 0, -1, 0};
+int dy[4] = {-1, 0, 1, 0};
 
 int main() {
   cin >> N >> T;
@@ -21,9 +21,9 @@ int main() {
   }
 
   int dir = 0;
-  int x = 0;
-  int y = 0;
-  int sum = 0;
+  int x = N / 2;
+  int y = N / 2;
+  int sum = board[y][x];
 
   for (int i = 0; i < T; i++) {
     if (str[i] == 'L') {
@@ -41,10 +41,6 @@ int main() {
       y = ny;
 
       sum += board[y][x];
-
-      if (board[y][x] == 1) {
-        break;
-      }
     }
   }
 
