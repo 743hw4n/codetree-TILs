@@ -15,7 +15,5 @@ int main() {
   }
 
   int max_value = stoi(a, nullptr, 2);
-
   cout << max_value;
-  return 0;
 }
