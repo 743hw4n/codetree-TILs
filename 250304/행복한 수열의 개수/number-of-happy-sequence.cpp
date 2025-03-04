@@ -6,6 +6,8 @@ int n, m;
 int grid[100][100];
 
 bool is_happy(int arr[], int length, int m) {
+  if (m <= 1 && length >= 1) return true;
+
   int count = 1;
   for (int i = 1; i < length; i++) {
     if (arr[i] == arr[i - 1])
